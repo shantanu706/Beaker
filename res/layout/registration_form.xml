@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationForm">
+
+    <Button
+        android:id="@+id/register"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/srcv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="-25pt"
+        android:layout_marginRight="20pt"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#000000"
+        android:onClick="clickRegister"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <ScrollView
+        android:id="@+id/srcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:layout_marginTop="20pt"
+                android:layout_marginBottom="40pt"
+                android:text="Registration "
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10pt"
+                android:hint="First Name"
+                android:textAlignment="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="10pt"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10pt"
+                android:hint="Last Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="10pt"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10pt"
+                android:hint="Mobile Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="10pt"
+                    android:inputType="number"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10pt"
+                android:hint="Email-ID">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="10pt"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10pt"
+                android:layout_marginTop="1pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="10pt"
+                android:layout_weight="1"
+                android:text="@string/passCondition"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="10pt"
+                    android:entries="@array/gender"
+                    android:spinnerMode="dialog" />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="15pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="Date of Birth"
+                    android:inputType="date"
+                    android:onClick="EditTextClicked"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

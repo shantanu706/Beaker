@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/down">
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5pt"
+        android:layout_marginRight="5pt"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/ic_refresh_black_24dp" />
+
+    <TextView
+        android:id="@+id/wall_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cash"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="10pt"
+        android:text="Your ID"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cash"
+        android:layout_marginLeft="18pt"
+        android:layout_marginBottom="-20pt"
+        android:text="Wallet Balance"
+        android:textColor="#F3F1F1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="30pt"
+        android:text="Loading..."
+        android:textColor="#FFFCFC"
+        android:textSize="80dp" />
+
+    <Button
+        android:id="@+id/but_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wall_id"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="120pt"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#FAF9F9"
+        android:text="Pay"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/transc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but_pay"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginRight="45pt"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#FFFFFF"
+        android:text=" Your Transcation  "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Beaker</string>
+    <string name="passCondition">Must contain at least one of the following special characters @, #, $\n</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeAct</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="demo_event">
+    Road bicycle racing is the cycle sport discipline of road cycling, held on paved roads.
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="AlertPin">Set Up Your Wallet!</string>
+    <string name="title_activity_wallet__creation">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="wallet_nsign_up"><h1>Wallet</h1> \nSign Up</string>
+</resources>
